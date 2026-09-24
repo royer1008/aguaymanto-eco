@@ -17,7 +17,7 @@
             background: linear-gradient(135deg, #e67e22, #f39c12); /* Tonos naranja/dorado */
             color: white; 
             text-align: center; 
-            padding: 5rem 2rem; 
+            padding: 5rem 2rem 7rem 2rem; /* Más espacio abajo para la foto */
         }
         h1 { 
             margin: 0; 
@@ -33,6 +33,21 @@
             margin-right: auto; 
             line-height: 1.5;
         }
+        
+        /* ESTILO PARA LA FOTO */
+        .hero-image {
+            text-align: center;
+            margin-top: -4rem; /* Sube la foto un poco sobre el fondo naranja */
+            padding: 0 20px;
+        }
+        .hero-image img {
+            width: 100%;
+            max-width: 500px; /* Tamaño máximo de la foto */
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border: 5px solid white; /* Borde blanco elegante */
+        }
+
         .container { 
             max-width: 1000px; 
             margin: 3rem auto; 
@@ -54,11 +69,10 @@
             padding: 2.5rem; 
             border-radius: 12px; 
             box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-            border-top: 5px solid #27ae60; /* Toque verde agrícola */
+            border-top: 5px solid #27ae60; 
         }
         .card h3 { color: #27ae60; font-size: 1.5rem; margin-top: 0; }
         
-        /* Sección de Plaza y Promoción */
         .availability { 
             text-align: center; 
             margin-top: 4rem; 
@@ -97,6 +111,12 @@
         <p class="pitch">"Nuestras pequeñas pepitas de oro nutricional, fresco, rico y de gran valor, lo presentamos con un empaque innovador, con su origen local y sabor especial. ¡Así como tú!"</p>
     </header>
 
+    <!-- AQUÍ SE MUESTRA LA FOTO -->
+    <div class="hero-image">
+        <!-- Reemplaza "foto-aguaymanto.jpg" con el nombre exacto de la foto que subiste -->
+        <img src="AGUAYMANTO.jpg" alt="Empaque de Aguaymanto de Andahuaylas">
+    </div>
+
     <div class="container">
         <h2 class="section-title">Nuestra Propuesta de Valor</h2>
         
@@ -111,14 +131,12 @@
             </div>
         </div>
 
-        <!-- Sección Plaza y Promoción -->
         <div class="availability">
             <h2 style="color: #27ae60; font-size: 2rem; margin-top: 0;">¿Dónde encontrarnos?</h2>
             <p>Llegamos al consumidor local a través de nuestros canales oficiales:</p>
             <p style="font-size: 1.4rem; color: #2c3e50;"><strong>🏪 Supermercados | 🌿 Tiendas de Productos Orgánicos | 💻 Tienda Virtual</strong></p>
             <p><em>¡Síguenos en redes sociales para enterarte de nuestras próximas <strong>degustaciones y ferias</strong>!</em></p>
             
-            <!-- Botón de venta virtual -->
             <a href="#" class="btn">Comprar en nuestra Tienda Virtual</a>
         </div>
     </div>
